@@ -6,18 +6,18 @@ mongoose.connect(process.env.MONGODB_CONNECTION, () =>
 );
 
 
-// const me  = new User({
-//   name:'hiren',
-//   age: 20,
-//   email: 'rs@example.com    ',
-//   description:'hirenss',
-//   password: 'password1525',
-//   complated : true
-// })
+const me  = new User({
+  name:'hiren',
+  age: 20,
+  email: 'rs@example.com    ',
+  description:'hirenss',
+  password: 'password1525',
+  complated : true
+})
 
-// me.save().then(()=>{
-//     console.log(me)
-// }).catch((err)=>
-//   console.log(err))
+me.save().then(()=>{
+    console.log(me)
+}).catch((err)=>
+  console.log(err))
 
-// app.listen(3000,()=> {console.log('listening on port 3000')})
+app.listen(3000,()=> {console.log('listening on port 3000')})
